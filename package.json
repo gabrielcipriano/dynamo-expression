@@ -1,0 +1,29 @@
+{
+  "name": "dynamo-expression",
+  "version": "0.0.1",
+  "description": "leverage tagged templates to write safer dynamodb expressions",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielcipriano/dynamo-expression.git"
+  },
+  "keywords": [
+    "dynamodb",
+    "expression",
+    "builder",
+    "condition",
+    "lib",
+    "dynamo",
+    "tagged",
+    "templates"
+  ],
+  "author": "Gabriel Cipriano",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/gabrielcipriano/dynamo-expression/issues"
+  },
+  "homepage": "https://github.com/gabrielcipriano/dynamo-expression#readme"
+}
