@@ -3,8 +3,13 @@
   "version": "0.0.1",
   "description": "leverage tagged templates to write safer dynamodb expressions",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "release": "npm run build && changeset publish",
+    "lint": "tsc"
   },
   "repository": {
     "type": "git",
@@ -25,5 +30,9 @@
   "bugs": {
     "url": "https://github.com/gabrielcipriano/dynamo-expression/issues"
   },
-  "homepage": "https://github.com/gabrielcipriano/dynamo-expression#readme"
+  "homepage": "https://github.com/gabrielcipriano/dynamo-expression#readme",
+  "devDependencies": {
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
 }
